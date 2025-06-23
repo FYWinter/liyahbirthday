@@ -1,0 +1,46 @@
+
+{
+    "width": 75,
+    "height": 75,
+    "minRespawn": 300,
+    "respawnVariation": 650,
+    "baseSpeed": 250,
+    "speedVariation": 50,
+    "missedPenalty": 2,
+    "modifiers": {
+        "sideways": {
+            "chance": 0.75,
+            "speed": 75,
+            "speedVariation": 25
+        },
+        "split": {
+            "chance": 0.2,
+            "extraPenalty": 2,
+            "count": 2,
+            "depth": 1,
+            "hSpeedFactor": 0.5,
+            "sizeFactor": 0.8
+        },
+        "dodge": {
+            "chance": 0.4,
+            "distance": 70,
+            "force": 1.5
+        }
+    },
+    "events": [
+        {
+            "type": "change",
+            "progressTrigger": 8.6,
+            "changes": {
+                "minRespawn": 550
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 16,
+            "changes": {
+                "minRespawn": 300
+            }
+        }
+    ]
+}

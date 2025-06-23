@@ -1,0 +1,51 @@
+
+{
+    "width": 50,
+    "height": 50,
+    "minRespawn": 600,
+    "respawnVariation": 500,
+    "baseSpeed": 100,
+    "speedVariation": 25,
+    "missedPenalty": 1,
+    "modifiers": {
+        "sideways": {
+            "chance": 0.5,
+            "speed": 30,
+            "speedVariation": 10
+        },
+        "split": {
+            "chance": 0.0,
+            "extraPenalty": 1,
+            "count": 2,
+            "depth": 1,
+            "hSpeedFactor": 0.5,
+            "sizeFactor": 0.9
+        },
+        "dodge": {
+            "chance": 1.0,
+            "distance": 100,
+            "force": 5.5
+        }
+    },
+    "events": [
+        {
+            "type": "words",
+            "progressTrigger": 0,
+            "value": ["Good", "Luck", "Little", "Femboy", "Femboy", "Femboy"]
+        },
+        {
+            "type": "change",
+            "progressTrigger": 55,
+            "changes": {
+                "minRespawn": 750
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 68,
+            "changes": {
+                "minRespawn": 450
+            }
+        }
+    ]
+}

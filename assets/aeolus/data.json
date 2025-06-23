@@ -1,0 +1,43 @@
+
+{
+    "width": 75,
+    "height": 75,
+    "minRespawn": 400,
+    "respawnVariation": 500,
+    "baseSpeed": 175,
+    "speedVariation": 75,
+    "missedPenalty": 1,
+    "modifiers": {
+        "sideways": {
+            "chance": 0.5,
+            "speed": 75,
+            "speedVariation": 10
+        },
+        "split": {
+            "chance": 0.15,
+            "extraPenalty": 1,
+            "count": 3,
+            "depth": 1,
+            "hSpeedFactor": 0.6,
+            "sizeFactor": 0.9
+        },
+        "dodge": {
+            "chance": 0.75,
+            "distance": 300,
+            "force": 1.5
+        }
+    },
+    "events": [
+        {
+            "type": "words",
+            "progressTrigger": 45,
+            "value": ["Keep", "Your", "Friends", "Close", "And", "Your", "Enemies", "Closer"]
+        },
+
+        {
+            "type": "words",
+            "progressTrigger": 58,
+            "value": ["Sometimes", "Killing", "Is", "A", "Must"]
+        }
+    ]
+}

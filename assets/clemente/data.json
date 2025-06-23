@@ -1,0 +1,94 @@
+
+{
+    "width": 65,
+    "height": 65,
+    "minRespawn": 700,
+    "respawnVariation": 1400,
+    "baseSpeed": 40,
+    "speedVariation": 33,
+    "missedPenalty": 1,
+    "modifiers": {
+        "sideways": {
+            "chance": 0.7,
+            "speed": 60,
+            "speedVariation": 33
+        },
+        "split": {
+            "chance": 0.9,
+            "extraPenalty": 1,
+            "count": 3,
+            "depth": 3,
+            "hSpeedFactor": 0.2,
+            "sizeFactor": 0.9
+        },
+        "dodge": {
+            "chance": 0.1,
+            "distance": 40,
+            "force": 1.1
+        }
+    },
+    "events": [
+        {
+            "type": "change",
+            "progressTrigger": 14,
+            "changes": {
+                "respawnVariation": 700,
+                "modifiers.split.count": 2
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 20,
+            "changes": {
+                "baseSpeed": 75,
+                "modifiers.split.depth": 2
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 30,
+            "changes": {
+                "minRespawn": 200,
+                "baseSpeed": 150,
+                "modifiers.split.chance": 0.1,
+                "modifiers.sideways.chance": 0.9,
+                "modifiers.sideways.speed": 200
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 40,
+            "changes": {
+                "baseSpeed": 300
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 52,
+            "changes": {
+                "respawnVariation": 300,
+                "modifiers.split.count": 2,
+                "modifiers.split.extraPenalty": 3,
+                "missedPenalty": 2
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 81,
+            "changes": {
+                "respawnVariation": 150,
+                "modifiers.sideways.speed": 300,
+                "baseSpeed": 200
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 90,
+            "changes": {
+                "respawnVariation": 100,
+                "baseSpeed": 100,
+                "speedVariation": 10
+            }
+        }
+    ]
+}

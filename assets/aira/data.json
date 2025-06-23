@@ -1,0 +1,126 @@
+
+{
+    "width": 80,
+    "height": 80,
+    "minRespawn": 300,
+    "respawnVariation": 500,
+    "baseSpeed": 400,
+    "speedVariation": 200,
+    "missedPenalty": 1,
+    "modifiers": {
+        "sideways": {
+            "chance": 1.0,
+            "speed": 100,
+            "speedVariation": 20
+        },
+        "split": {
+            "chance": 0.0,
+            "extraPenalty": 2,
+            "count": 2,
+            "depth": 1,
+            "hSpeedFactor": 0.5,
+            "sizeFactor": 0.9
+        },
+        "dodge": {
+            "chance": 0.1,
+            "distance": 20,
+            "force": 7.5
+        }
+    },
+    "events": [
+        {
+            "type": "change",
+            "progressTrigger": 6,
+            "changes": {
+                "respawnVariation": 350
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 11.5,
+            "changes": {
+                "minRespawn": 150
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 15.8,
+            "changes": {
+                "baseSpeed": 350,
+                "minRespawn": 400,
+                "modifiers.sideways.speed": 275
+            }
+        },
+        {
+            "type": "words",
+            "progressTrigger": 18,
+            "value": ["Dan", "Dan", "Dan", "DAN!", "DAN!", "DAN!"]
+        },
+        {
+            "type": "change",
+            "progressTrigger": 32,
+            "changes": {
+                "baseSpeed": 450,
+                "modifiers.sideways.speed": 100
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 37.4,
+            "changes": {
+                "baseSpeed": 450,
+                "minRespawn": 200
+            }
+        },
+        {
+            "type": "change",
+            "progressTrigger": 48,
+            "changes": {
+                "baseSpeed": 400,
+                "minRespawn": 300
+            }
+        },
+        {
+            "type": "words",
+            "progressTrigger": 50,
+            "value": ["Dan", "Dan", "Dan", "DAN!", "DAN!", "DAN!"]
+        },
+        {
+            "type": "change",
+            "progressTrigger": 65,
+            "changes": {
+                "modifiers.sideways.speed": 250,
+                "modifiers.split.chance": 0.2,
+                "missedPenalty": 2
+            }
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 80,
+            "changes": {
+                "baseSpeed": 200,
+                "speedVariation": 50,
+                "minRespawn": 400,
+                "respawnVariation": 300,
+                "modifiers.sideways.speed": 150,
+                "modifiers.split.chance": 0.3,
+                "modifiers.split.extraPenalty": 3,
+                "modifiers.split.count": 3,
+                "modifiers.split.depth": 2
+            }
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 85,
+            "changes": {
+                "baseSpeed": 600,
+                "minRespawn": 500,
+                "modifiers.split.chance": 0.0,
+                "modifiers.sideways.chance": 0.75,
+                "modifiers.sideways.speed": 300
+            }
+        }
+    ]
+}

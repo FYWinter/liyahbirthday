@@ -1,0 +1,102 @@
+
+{
+    "width": 75,
+    "height": 75,
+    "minRespawn": 500,
+    "respawnVariation": 500,
+    "baseSpeed": 300,
+    "speedVariation": 50,
+    "missedPenalty": 1,
+    "modifiers": {
+        "sideways": {
+            "chance": 0.0,
+            "speed": 200,
+            "speedVariation": 50
+        },
+        "split": {
+            "chance": 1.0,
+            "extraPenalty": 1,
+            "count": 2,
+            "depth": 1,
+            "hSpeedFactor": 0.5,
+            "sizeFactor": 0.9
+        },
+        "dodge": {
+            "chance": 0.0,
+            "distance": 40,
+            "force": 2.5
+        }
+    },
+    "events": [
+        {
+            "type": "change",
+            "progressTrigger": 5,
+            "changes": {
+                "minRespawn": 250
+            }
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 33.4,
+            "changes": {
+                "respawnVariation": 150,
+                "minRespawn": 200,
+                "baseSpeed": 200
+            }
+        },
+
+
+        {
+            "type": "words",
+            "progressTrigger": 33.4,
+            "value": ["Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart"]
+        },
+        {
+            "type": "words",
+            "progressTrigger": 44,
+            "value": ["Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart"]
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 50,
+            "changes": {
+                "respawnVariation": 600,
+                "minRespawn": 300,
+                "modifiers.sideways.chance": 0.6
+            }
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 67,
+            "changes": {
+                "respawnVariation": 200,
+                "modifiers.sideways.chance": 0.2
+            }
+        },
+
+        {
+            "type": "change",
+            "progressTrigger": 82.8,
+            "changes": {
+                "baseSpeed": 150,
+                "respawnVariation": 300,
+                "minRespawn": 150,
+                "modifiers.sideways.speed": 200
+            }
+        },
+        {
+            "type": "words",
+            "progressTrigger": 82.8,
+            "value": ["Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart"]
+        },
+
+        {
+            "type": "words",
+            "progressTrigger": 91.2,
+            "value": ["Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart", "Ruler", "Of", "My", "Heart"]
+        }
+    ]
+}
